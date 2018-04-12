@@ -24,6 +24,7 @@ public class btn_script : MonoBehaviour {
 
 	public void OnclickBtn(){
 		print ("Button Clicked");
+		GameCont.
 		btntext.text = Value_assigned.ToString ();
 		GameCont.DataMatch (ID, Value_assigned);
 		/*if (GameCont.clickturn == 0) {

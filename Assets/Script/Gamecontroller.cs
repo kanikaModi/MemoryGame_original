@@ -24,7 +24,7 @@ public class Gamecontroller : MonoBehaviour {
 	private int gamestatus;//Dictionary<string, int> obj_veg;
 	//Dictionary<int, string> obj_veg1;
 	// Use this for initialization
-
+	public audiomanager audiomng;
 	void Start () {
 		//Debug.Log ("WHY YOU COME HERE");
 		gamestatus = 1;
@@ -116,6 +116,7 @@ public class Gamecontroller : MonoBehaviour {
 	}
 
 	private void gameover2(){
+		audiomng.Play ("win");
 		gameover.SetActive (true);
 	}
 
@@ -131,6 +132,7 @@ public class Gamecontroller : MonoBehaviour {
 			Debug.Log ("Second click" + prev_btnclick + "  " + btnid);
 			if(slotnum[prev_btnclick] == slotnum[btnid])
 			{
+				audiomng.Play ("correct");
 				total_score = total_score + 2;
 				score.SetText ("Score {0}", total_score);
 				//print ("total_score" + total_score);
@@ -138,6 +140,7 @@ public class Gamecontroller : MonoBehaviour {
 				prev_btnclick = -1;
 			}
 			else{
+				audiomng.Play ("wrong");
 				curr_btnclick = btnid;
 				StartCoroutine (resetthebutton());
 

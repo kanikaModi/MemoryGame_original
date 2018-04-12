@@ -32,7 +32,7 @@ public class ver2_btnscript : MonoBehaviour {
 			}
 
 		thisbtn.interactable = false;
-		Debug.Log ("SetValue1 : " + btnid);
+		//Debug.Log ("SetValue1 : " + btnid);
 		gamecont.DataMatch (btnid);
 	}
 

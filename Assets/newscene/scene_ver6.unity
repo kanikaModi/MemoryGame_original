@@ -968,11 +968,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -2158,6 +2158,65 @@ RectTransform:
   m_AnchoredPosition: {x: -4.5, y: 3.8}
   m_SizeDelta: {x: 5, y: 1.5}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &758487343
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 758487345}
+  - component: {fileID: 758487344}
+  m_Layer: 0
+  m_Name: Audio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &758487344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 758487343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa9af60448e57748b3d8add7b2ebcfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound:
+  - name: correct
+    clip: {fileID: 8300000, guid: dfb512f07596014418e63766d2c52d21, type: 3}
+    volume: 0.572
+    pitch: 0.92
+    source: {fileID: 0}
+    loop: 0
+  - name: wrong
+    clip: {fileID: 8300000, guid: aa0990e51ab2fe540872b71bea30b687, type: 3}
+    volume: 0.572
+    pitch: 0.92
+    source: {fileID: 0}
+    loop: 0
+  - name: win
+    clip: {fileID: 8300000, guid: b92c9c556cc545c4aaa3e2d69507f7b8, type: 3}
+    volume: 0.572
+    pitch: 0.92
+    source: {fileID: 0}
+    loop: 0
+--- !u!4 &758487345
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 758487343}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 117.60615, y: 465.43732, z: 67.0863}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &820417139
 GameObject:
   m_ObjectHideFlags: 0
@@ -2292,11 +2351,11 @@ MonoBehaviour:
     lineCount: 3
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 820417143}
@@ -3272,6 +3331,7 @@ MonoBehaviour:
   Timetext: {fileID: 578485867}
   redsprit: {fileID: 21300000, guid: 7064fcdbc06894c469fb22e626de1de4, type: 3}
   gameover: {fileID: 408939518}
+  audiomng: {fileID: 758487344}
 --- !u!1 &1803402735
 GameObject:
   m_ObjectHideFlags: 0
